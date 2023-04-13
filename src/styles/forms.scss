@@ -1,0 +1,82 @@
+/* form */
+
+label {
+  @apply block text-sm font-bold text-gray-100;
+}
+
+.input-default {
+  @apply border py-3 px-4 font-normal text-gray-100;
+}
+
+.select-default {
+  @apply border py-3 px-4 font-normal text-gray-100;
+}
+
+textarea {
+  @apply border py-3 px-4 font-normal text-gray-100;
+}
+
+// input type text
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='search'] {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.label-float {
+  position: relative;
+  width: 100%;
+}
+
+.label-float input {
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  &:disabled {
+    background: #f6f7ff;
+    border: none;
+  }
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 8px;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  background-color: white;
+  padding-inline: 4px;
+  color: #797979;
+}
+
+.label-float input:required:invalid + label:before {
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: rgb(53, 53, 53);
+  top: -8px;
+}

@@ -1,0 +1,43 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #696969;
+}
+
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}
