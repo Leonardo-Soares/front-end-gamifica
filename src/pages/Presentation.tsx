@@ -2,9 +2,9 @@ export default function Presentation() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#202024] to-[#15162c]">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-10 ">
-        <img src="/icone-bredi.svg" className="h-44" />
+        <img src="/icone-template.svg" className="h-44" />
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          <span className="text-[#F7D622]">Bredi</span> Template
+          <span className="text-[#F7D622]">Template</span> Template
         </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-4 xl:gap-8">
           <a

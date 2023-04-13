@@ -9,7 +9,7 @@ import { api } from './axios';
 export function useFetchByContrato<T>(url: string) {
   const { data, error, isLoading } = useSWR<T, Error>(url, async (url) => {
     const response = await api.get(
-      `https://api-temp.vercel.app/api/bredi-team${url}`
+      `https://api-temp.vercel.app/api/template-team${url}`
     );
     return response.data;
   });

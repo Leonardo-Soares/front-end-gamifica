@@ -1,12 +1,3 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/33937520/221443033-72b5a0c7-587f-4bcc-98ce-4dc3ebded43e.png" width="130" alt="Logo for T3" />
-</p>
-
-<h1 align="center">
-  Bredi Template </br>
-</h1>
-
-
 ### Tecnologias
 
 
