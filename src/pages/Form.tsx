@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { LabelError } from '@components/Forms/LabelError';
-import ButtonPrimary from '@components/Buttons/ButtonPrimary';
 import ButtonOutline from '@components/Buttons/ButtonOutline';
 import MainLayout from '@components/Layout/MainLayout';
 
@@ -67,16 +66,7 @@ export function FormExample() {
             <span>
               <Link to={'#'}>Recuperar</Link>
             </span>
-            <div className='flex gap-3 py-4'>
-              <ButtonPrimary
-                type="submit"
-                onClick={() => { }}
-                disabled={isSubmitting}
-              >
-                Entrar
-              </ButtonPrimary>
-              <ButtonOutline onClick={() => { }}>Cadastar</ButtonOutline>
-            </div>
+
           </>
         </form>
       </div>

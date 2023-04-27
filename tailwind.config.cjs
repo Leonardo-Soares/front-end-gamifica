@@ -6,7 +6,8 @@ module.exports = {
         brand: {
           green: {
             100: '#EAFFF2',
-            400: '#01DF5A'
+            400: '#01DF5A',
+            500: '#34BB6A',
           },
           blue: {
             50: '#EBFCFF',

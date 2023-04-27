@@ -1,4 +1,3 @@
-import ButtonPrimary from '@components/Buttons/ButtonPrimary'
 import { Dialog } from '@headlessui/react'
 import privacyPolicyModalStore from '@stores/modals/privacyPolicyModalStore'
 
@@ -18,9 +17,6 @@ export function PrivacyPolicyModal() {
         <p className='py-3'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, soluta saepe, nobis enim consequuntur quisquam animi amet aliquid non libero a nulla repudiandae suscipit quibusdam velit expedita beatae alias dolorem.
         </p>
-        <div className='flex gap-3'>
-          <ButtonPrimary onClick={() => setModalState(false)}>Fechar</ButtonPrimary>
-        </div>
       </Dialog.Panel>
     </Dialog>
   )
