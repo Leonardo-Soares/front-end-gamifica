@@ -8,7 +8,8 @@ export default function Login() {
             <h2 className="text-white font-normal text-end text-3xl">Plataforma de Gamificação para a educação</h2>
           </div>
           <div className="w-full flex justify-center">
-            <img src="../../assets/img/figuras/menino-login.png" className="w-80 md:w-[420px] lg:w-[540px] absolute bottom-0 left-4" />
+            <img src="../../assets/img/figuras/menino-login.png" className="w-80 md:w-[420px] lg:w-[540px] absolute bottom-0 left-4 z-10" />
+            <img src="../../assets/img/figuras/livros-escolares.png" className="w-100 absolute bottom-0 left-4" />
           </div>
         </div>
         <div className="grid justify-center order-0 md:order-1 px-4">
