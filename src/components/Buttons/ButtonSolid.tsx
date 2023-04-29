@@ -6,7 +6,7 @@ const ButtonSolid = (props: any) => {
 
   return (
     <div
-      className='rounded-3xl items-center flex hover:opacity-80'
+      className='rounded-3xl items-center flex justify-center my-4 hover:opacity-80'
       style={{
         height: '52px',
         border: backgrtound ?? '#01DF5A',
@@ -14,7 +14,7 @@ const ButtonSolid = (props: any) => {
       }}
     >
       <a href={link}
-        className='px-6'
+        className='px-6 text-center'
         style={{ color: color ?? '#000' }}
       >
         {name}
