@@ -1,33 +1,37 @@
-import React from 'react'
-interface Props {
-  title: string,
-  onPress: () => void,
-  backgroundColor?: any,
-  borderColor?: any,
-  color?: string,
-  image?: string,
-}
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function ButtonSolid({ title, onPress, backgroundColor, borderColor, color, image }: Props) {
+const ButtonSolid = (props: any) => {
+  const { name, link, backgrtound, color } = props;
+
   return (
-    <button
-      onClick={onPress}
-      className='
-        px-10 
-        py-3 
-        font-light'        
+    <div
+      className='rounded-3xl items-center flex hover:opacity-80'
       style={{
-        gap: 12,
-        color: color,
-        borderWidth: 2,
-        display: 'flex',
-        borderRadius: 90,
-        backgroundColor: backgroundColor,
-        borderColor: borderColor ?? backgroundColor,
+        height: '52px',
+        border: backgrtound ?? '#01DF5A',
+        backgroundColor: backgrtound ?? '#01DF5A',
       }}
     >
-      {image && <img src={image} className='h-[24px]' />}
-      {title}
-    </button>
-  )
+      <a href={link}
+        className='px-6'
+        style={{ color: color ?? '#000' }}
+      >
+        {name}
+      </a>
+    </div>
+  );
 }
+
+ButtonSolid.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  backgrtound: PropTypes.string,
+};
+
+ButtonSolid.defaultProps = {
+};
+
+
+export default ButtonSolid;
