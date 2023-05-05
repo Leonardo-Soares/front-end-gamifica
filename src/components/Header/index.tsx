@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div className="w-full bg-[#489E5B] flex flex-row justify-between p-6">
+    <div className="w-full bg-[#489E5B] flex flex-row justify-between p-3">
       <a href="/home" className="flex flex-row items-center gap-4">
         <img src="../../assets/img/logos/logo-gamifica.png" className="w-12" />
         <h1 className="font-normal uppercase text-white text-[32px]">Cadastro</h1>

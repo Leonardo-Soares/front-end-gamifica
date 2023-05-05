@@ -1,7 +1,11 @@
 import ButtonSolid from "@components/Buttons/ButtonSolid";
 import ButtonOutImage from "@components/Buttons/ButtonOutImage";
+import { useState } from "react";
+
+
 
 export default function Login() {
+  const [showPassword, setShowPassword] = useState(false)
   return (
     <div className="w-full bg-green-100 flex-1 h-[100vh]">
       <div className="grid h-[100vh] grid-cols-1 md:grid-cols-2 justify-center items-center">
@@ -20,15 +24,27 @@ export default function Login() {
             <div className="w-full flex justify-center">
               <h1 className="text-[32px] text-center text-white font-semibold w-[200px] leading-10">ACESSO À PLATAFORMA</h1>
             </div>
-            <input type="text" placeholder="USUÁRIO" className="mt-4 px-3 py-2 bg-white border border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" />
-            <input type="text" placeholder="SENHA" className="mt-4 px-3 py-2 bg-white border border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" />
+
+            <input type="text" placeholder="USUÁRIO" className="mt-4 px-3 py-2 bg-white border border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" />
+
+            <div className="relative">
+              <input type={showPassword ? 'text' : 'password'} placeholder="SENHA" className="mt-4 px-3 py-2 bg-white border border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" />
+              <button onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-8">
+                {
+                  showPassword ?
+                    <img src="../../../assets/img/icons/olho-nao-ver.png" />
+                    :
+                    <img src="../../../assets/img/icons/olho-ver.png" />
+                }
+              </button>
+            </div>
             <div className="w-full flex justify-end mt-2">
               <a href="#" className="text-white hover:border-b-2 text-[14px] font-normal">ESQUECEU SEU USUÁRIO OU SENHA?</a>
             </div>
 
             <div className="block md:flex text-center justify-center gap-4 my-4">
               <ButtonSolid
-                link="#"
+                link="/home"
                 name="ACESSAR"
                 color="#01DF5A"
                 backgrtound={'#fff'}
@@ -62,14 +78,14 @@ export default function Login() {
               />
             </div>
           </div>
-          <img  src="../../assets/img/figuras/aviao.png" className="absolute left-[49%] top-[16%]" />
-          <img  src="../../assets/img/figuras/numero-1.png" className="absolute top-[4%]" />
-          <img  src="../../assets/img/figuras/trofeu.png" className="absolute top-[36%] right-[42%]" />
-          <img  src="../../assets/img/figuras/medalha.png" className="absolute top-0 right-[28%]" />
-          <img  src="../../assets/img/figuras/book.png" className="absolute top-[4%] right-[16%]" />
-          <img  src="../../assets/img/figuras/score.png" className="absolute top-[4%] right-[3%]" />
-          <img  src="../../assets/img/figuras/mochila.png" className="absolute bottom-[0%] right-[0%] hidden md:flex" />
-          <img  src="../../assets/img/figuras/regua.png" className="absolute bottom-[0%] right-[45%] hidden md:flex" />
+          <img src="../../assets/img/figuras/aviao.png" className="absolute left-[49%] top-[16%]" />
+          <img src="../../assets/img/figuras/numero-1.png" className="absolute top-[4%]" />
+          <img src="../../assets/img/figuras/trofeu.png" className="absolute top-[36%] right-[42%]" />
+          <img src="../../assets/img/figuras/medalha.png" className="absolute top-0 right-[28%]" />
+          <img src="../../assets/img/figuras/book.png" className="absolute top-[4%] right-[16%]" />
+          <img src="../../assets/img/figuras/score.png" className="absolute top-[4%] right-[3%]" />
+          <img src="../../assets/img/figuras/mochila.png" className="absolute bottom-[0%] right-[0%] hidden md:flex" />
+          <img src="../../assets/img/figuras/regua.png" className="absolute bottom-[0%] right-[45%] hidden md:flex" />
         </div>
       </div>
     </div>

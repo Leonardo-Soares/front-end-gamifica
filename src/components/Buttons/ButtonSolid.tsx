@@ -5,7 +5,8 @@ const ButtonSolid = (props: any) => {
   const { name, link, backgrtound, color } = props;
 
   return (
-    <div
+    <a
+      href={link}
       className='rounded-3xl items-center flex justify-center my-4 hover:opacity-80'
       style={{
         height: '52px',
@@ -13,13 +14,13 @@ const ButtonSolid = (props: any) => {
         backgroundColor: backgrtound ?? '#01DF5A',
       }}
     >
-      <a href={link}
+      <div
         className='px-6 text-center'
         style={{ color: color ?? '#000' }}
       >
         {name}
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }
 
